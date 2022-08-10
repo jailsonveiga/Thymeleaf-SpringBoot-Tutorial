@@ -12,4 +12,16 @@ public class HelloWorldController {
         model.addAttribute("message", "Hello World");
         return "HelloWorld";
     }
+
+    @GetMapping("/style")
+    public String style() {
+
+        return "add-css-js-demo";
+    }
+
+    @GetMapping("/bootstrap")
+    public String bootstrap() {
+
+        return "add-bootstrap";
+    }
 }
